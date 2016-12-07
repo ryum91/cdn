@@ -1,14 +1,16 @@
-function println(text) {
-	var body = document.body;
+/**
+ * text print
+ */
+function print(text) {
 	var span = document.createElement('span');
 	span.appendChild(document.createTextNode(text));
-	body.appendChild(span);
-	body.appendChild(document.createElement('br'));
+	document.body.appendChild(span);
 }
 
-function print(text) {
-	var body = document.body;
-	var span = document.createElement('span');
-	span.appendChild(document.createTextNode(text));
-	body.appendChild(span);
+/**
+ * text print and new line
+ */
+function println(text) {
+	print(text);
+	document.body.appendChild(document.createElement('br'));
 }
