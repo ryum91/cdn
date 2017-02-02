@@ -14,3 +14,8 @@ function println(text) {
 	print(text);
 	document.body.appendChild(document.createElement('br'));
 }
+
+// clear console when fiddle reloading
+try {
+	console.clear();
+} catch (e) {}
